@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-padding-top: 2rem;
+	scroll-behavior: smooth;
+	list-style: none;
+	text-decoration: none;	
+	font-family: "Poppins", sans-serif;
+}:root {
+  --main-color: #fe5b3d;
+  --second-color: #ffac38;
+  --text-color: #444;
+  --gradient: linear-gradient( #fe5b3d, #ffac38);
+  }
+
+html::-webkit-scrollbar {
+	width: 0.5rem;
+}
+html::-webkit-scrollbar-track {
+	background: transparent;
+}
+	html::-webkit-scrollbar-thumb {
+	background: var(--main-color);
+	border-radius: 5rem;
+	}
+	section {
+		padding: 50px 100px;
+	}
+	header {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		right: 0;
+		z-index: 1000;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background: #eeeff1;
+		padding: 15px 100px;
+		}
+		.logo img {
+			width: 40px;
+		}
+
+.navbar {
+    display: flex;
+}
+.navbar li {
+    position: relative;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.navbar a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: var(--gradient);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+}			
+ .navbar a:hover::after {
+  width: 100%;
+}
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+    .header-btn a {
+        padding: 10px 20px;
+        color: var(--text-color);
+        font-weight: 500;
+    }
+    .header-btn .sign-in {
+        background: #fb4400;
+        color: #FFF;
+    border-radius: 0.5rem;
+    }
+    .header-btn .sign-in:hover {
+     background: var(--main-color);
+    }
+	
+	.table tbody tr td.product-name h3 {
+		font-size: 18px; }
+	  .table tbody tr td.product-name .rated span {
+		color: #01d28e; }
+		.table tbody tr td.product-name .rated span:nth-child(1) {
+		  color: #000000; }
+		.table tbody tr td.product-name .rated span:last-child {
+		  color: rgba(0, 0, 0, 0.1); }
+	  .table tbody tr td.price {
+		text-align: center !important;
+		background: rgba(0, 0, 0, 0.05);
+		border-right: 1px solid #fff;
+		border-bottom: 1px solid #fff !important;
+		position: relative;
+		-moz-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		-webkit-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+		transition: all 0.3s ease; }
+		.table tbody tr td.price:last-child {
+		  border-left: none; }
+		.table tbody tr td.price h3 {
+		  position: relative; }
+		  .table tbody tr td.price h3 small {
+			position: absolute;
+			top: 0;
+			left: -10px;
+			font-size: 14px; }
+		  .table tbody tr td.price h3 span.num {
+			color: #1089ff;
+			font-size: 20px;
+			position: relative; }
+        .table tbody tr td.price h3 span.per {
+          font-size: 14px;
+          color: rgba(0, 0, 0, 0.4); }
+      .table tbody tr td.price .subheading {
+        font-size: 14px; }
+      .table tbody tr td.price .btn-custom {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        opacity: 0;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        z-index: 1; }
+        .table tbody tr td.price .btn-custom a {
+          padding: 7px 20px;
+          display: inline-block;
+          background: #1089ff;
+          color: #fff;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          border-radius: 5px;
+          -webkit-box-shadow: -10px 10px 25px -15px rgba(0, 0, 0, 0.17);
+          -moz-box-shadow: -10px 10px 25px -15px rgba(0, 0, 0, 0.17);
+          box-shadow: -10px 10px 25px -15px rgba(0, 0, 0, 0.17); }
+      .table tbody tr td.price .price-rate {
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+      .table tbody tr td.price:hover.price {
+        background: #01d28e; }
+      .table tbody tr td.price:hover .btn-custom {
+        opacity: 1; }
+      .table tbody tr td.price:hover .price-rate {
+        opacity: 0; 
+	}
